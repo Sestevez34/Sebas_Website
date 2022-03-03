@@ -1,6 +1,46 @@
+/*SELECTORS*/
 p{
     font-family: sans-serif;}
 .NavBar{
     background-color:blue;}
 #pink{
     font-family: sans-serif;}
+
+/*
+    Tag Selector: weakest
+    Class Selector: more powerful than tag selector
+    Id Selector: ID is more specific and therfore more powerful than the othe two
+    In tag demands are the most powerful   
+    Classes are meant to for one multiple element
+    ID's are meant for one singular item    
+*/
+
+/*PSUEDOSELECTORS*/
+
+p:hover{ /*on hover properties will be changed*/
+    color: green;}
+li:first-child{ /*the first item in any list element will have its properties changed*/
+    color: steelblue;
+}
+/*also last-child, only-child and nth-child*/
+
+#google-link:link{
+    color:blue;
+}
+#google-link:visited{
+    color:red;
+}
+/*Advanced Selectors*/
+
+/*Combo selector*/
+h2+ a{
+    color: red;
+}
+/*General Sibling Selector*/
+textarea ~ button{
+    color:purple;
+}
+
+a[style = white]{
+    font-family: comic Arial, Helvetica, sans-serif;
+}
